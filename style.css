@@ -1,0 +1,619 @@
+/******************************************************************************************************/
+/* This CSS file will be linked To {header.php} which's an included Header In All The HTML Pages In side Php files like : index.php , login.php , users.php ,chat.php
+/******************************************************************************************************/
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: system-ui;
+    font-weight: 400;
+}
+    
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: aliceblue;
+        background-image: url(backg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    /* Next code will Style The From with some shadows */
+    .wrapper {
+        background-color: white;
+        width: 450px;
+        border-radius: 26px 17px 0px 55px;
+        box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
+                0 32px 64px -48px rgba(0,0,0,0.5);
+        margin-inline: 15px;
+    }
+    
+    /* Next code will work on the Whole form Holder to Handle It */
+    .formHolder{
+        padding: 23px 26px;
+        border-radius: 17px 13px 0px 49px;
+        background: linear-gradient(32deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+    }
+    
+    .formHolder header {
+        font-size: 25px;
+        font-weight: 600;
+        padding-bottom: 13px;
+        border-bottom: 0px solid #d99292;
+        margin-bottom: 10px;
+        font-weight: 100;
+        color: white;
+        font-size: 2.4rem;
+        text-align: center;
+    }
+    /* Next Handling the error Massage that will appear Problem happend */
+    .formHolder form .error-txt {
+        color: #000000;
+        padding: 8px 10px;
+        text-align: center;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        background-color: #ff00009c;
+        border: 1px solid #00000000;
+        color: white;
+        font-weight: 500;
+        display: none; 
+    }
+    
+
+
+    /* Styling the Upload file */
+
+    .upload-btn-wrapper {
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
+      }
+      
+      .btn {
+        border: 2px solid #0043FF;
+        color: #fffefe;;
+        background-color: #0043FF;
+        padding: 2px 11px;
+        border-radius: 8px;
+        font-size: 17px;
+        font-weight: 600;
+        font-family: system-ui;
+    }
+      
+      .upload-btn-wrapper input[type=file] {
+        font-size: 100px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+        cursor: pointer;
+
+      }
+    
+    
+    
+    
+    .formHolder form .field input {
+        outline: none;
+    }
+    
+    /* Next code For The All Form Inputs Holders(div's) ,[First/Last Name , email , password] */
+    
+    .formHolder form .field {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        margin-bottom: 10px;
+    
+    }
+    
+    .formHolder form .TextInputs input {
+        height: 40px;
+        width: 100%;
+        font-size: 16px;
+        padding: 0px 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #0000004f;
+        color: white;
+        border-color: transparent;
+        border-radius: 7px 11px 11px 3px;
+    }
+    
+    .formHolder form .field label {
+        margin-bottom: 2px;
+
+    
+    }
+    
+    .formHolder form .userImg input {
+        font-size: 1rem;
+    
+    }
+    
+    .formHolder form .submitB input {
+        margin-top: 10px;
+        height: 45px;
+        border: none;
+        font-size: 17px;
+        font-weight: 400;
+        background: linear-gradient(32deg, rgb(2 0 36 / 58%) -50%, rgb(9 9 121 / 58%) 6%, rgb(0 212 255) 125%);
+        color: #fff;
+        border-radius: 39px;
+        width: 100%;
+        cursor: pointer;
+        box-shadow: 0px 0px 5px 0px #0000007d;
+    }
+
+
+    .formHolder .link {
+        text-align: center;
+        color: white;
+        font-weight: 100;
+    }
+    
+    .formHolder .link a {
+        color: rgb(255 255 255);
+        margin-inline: auto;
+        font-weight: 100;
+    }
+    
+    .formHolder .link a:hover {
+        text-decoration-line: underline;
+        
+    }
+    ::placeholder {
+        color:#ffffff8c;
+    }
+    /* Styling hide Password Icon */
+
+    /* For Sign Up */
+    .formHolder form .field i {
+        margin-bottom: 2px;
+        position: absolute;
+        right: 1.1rem;
+        color:#ccc;
+        cursor: pointer;
+        /* To center the icon at the middle of the input */
+        top: 56%;
+        transform: translateY(-50%);
+    }
+
+
+
+    
+    /* Next will make An Active to - add - or  - remove it - As the function of showing/hiding password In Javascript will Edit It on user click  */
+    .formHolder form .field i.active::before {
+        color: #333;
+        content: "\f070" ;
+        
+    }
+    
+    
+    
+    
+    /* Now finished Login/signup Sttyling Now The Users.html [Users] Page */
+    
+    /* ---------------------------------------------------------------------------------------------------------------------------------- */
+    
+    
+    
+    
+    /* Chats and users styling */
+    .users {
+        padding: 25px 30px;
+        position: relative;
+    }
+    
+    .users header {
+        display: flex;
+        align-items: center;
+        padding-bottom: 20px;
+        justify-content: space-between;
+        border-bottom: 1px solid #e6e6e6;
+        margin-inline: -24px;
+        padding-bottom: 39px;
+    }
+    .users header .content{
+        display: flex;
+        align-items: center;
+    
+    }
+    
+    .users header .details {
+        margin-left: 15px;
+        color: #000;
+    
+    }
+    
+    .users header .details span {
+        font-size: 18px;
+        font-weight: 600;
+        position: absolute;
+        top: 30px;
+        left: 12px;
+    }
+    /* Handling user Image */
+    .users header .content img{
+        object-fit: cover;
+        border-radius: 50%;
+        position: absolute;
+        border: 5px solid white;
+        top: -37px;
+        left: 28px;
+    }
+
+
+    
+    .wrapper img {
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    
+    /* styling logout button */
+    .users header .logout {
+        font-size: 2.5rem;
+        color:rgb(63, 131, 194);
+        
+    }
+    
+    .users .search{
+        margin: 3px 0;
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: space-between;
+        margin-block: 10px;
+    }   
+    
+    .users .search .text {
+        font-size: 18px;
+    }
+    
+    .users .search input {
+        position: absolute;
+        height: 42px;
+        width: calc(100% - 47px);
+        border: 1px solid #ccc;
+        padding: 0 13px;
+        font-size: 16px ;
+        outline: none;
+        border-radius: 5px 0 0 5px ;
+        cursor: pointer;  
+        pointer-events: none; /*Disable Events on the button*/      
+        transition: all 0.3s ease;
+        opacity:0;
+    
+    
+    }
+    
+    /* Next will make a side style for event Onclick on the search icon in the users search */
+    .users .search input.active {
+            opacity: 1;
+            
+            pointer-events: auto; /*Disable Events on the button*/
+    
+    }
+    
+    
+    
+    
+    
+    
+    
+    .users .search button {
+    
+        width: 47px;
+        height: 42px;
+        border: none;
+        color: #333;
+        background: #fff;
+        outline:none;
+        border: none;
+        border-radius: 0 5px 5px 0;
+        font-size: 17px;
+        cursor: pointer;
+    }
+    
+    /* this code is the same but contorled by javascript code to make a soft animation */
+    .users .search button.active{
+        color: #fff;
+        background-color: #e73434;
+    }
+    
+    /* Change The search icon with x While searching */
+    .users .search button.active i::before{
+        content: "\f00d";
+    }
+    
+    
+    /* Now styling the Other users appearnce in the chat */
+    
+    .users-list{
+        /* Next code is for scrolling not to overflow and make Very Long page height so will use overflow to make a scroll and make a simple , simple chats box with default max-size which's 350px */
+        max-height: 350px;
+        /* Now will over flow vertically to make a scoll */
+        overflow-y:auto;
+    }
+    
+    .users-list::-webkit-scrollbar {
+        /* Now hide the scrollbar itself for better looking */
+    
+        width: 0px;
+    }
+    
+    .users-list .content{
+        display: flex;
+        align-items: center;
+    
+    }
+    
+    .users-list .details{
+        margin-left: 15px;
+        color: #000;
+    }
+    
+    .users-list .details span{
+        font-size: 18px;
+        font-weight:500 ;
+    }
+    
+    .users-list a .content img{
+        height: 40px;
+        width: 40px;
+    
+    }
+    
+    
+    .users-list a{
+        display: flex;
+        align-items: center;
+        padding-block: 17px;
+        justify-content: space-between;
+        border-top: 1px solid #8d8c8c65;
+        padding-right: 15px;
+        page-break-after: 10px;
+
+
+    
+    }
+    
+    
+    .users-list a:last-child{
+        margin-bottom:-10px ;
+        
+    }
+
+    
+
+
+
+
+    
+    /* Now the Text looking from outside */
+    .users-list a .content .details p {
+        color: #a3a3a3;
+    }
+    
+    .users-list a .status-dot{
+        font-size: 11px;
+        color: rgb(1, 168, 1);
+    
+    }
+    
+    /* Next block of styling code is for  ?
+    
+    Will add A (.) after the Real ClassName As a normal class name
+    but the text/Name after the (.) will act as a Class to control it's style but not in css page !!
+    will be updated by php code 
+    based on the php database As the user is Online Or offline
+    
+    */
+    .users-list a .status-dot.offline{
+        font-size: 11px;
+        color: rgb(165 165 165);
+    
+    }
+
+    /*  Next will do the same idea but inside the chat */
+
+    .chat-area .status-dot-inchat{
+        font-size: 11px;
+        transform: rotate(2deg);
+        color: rgb(1, 168, 1);
+        position: absolute;
+        top: 19px;
+        left: 232px;
+        border: 3px solid white;
+        border-radius: 21px;
+        background-color: rgb(1, 168, 1);
+    }
+    
+    .chat-area .status-dot-inchat.offline{
+        font-size: 11px;
+        transform: rotate(2deg);
+        color: rgb(165 165 165);
+        position: absolute;
+        top: 19px;
+        left: 232px;
+        border: 3px solid white;
+        border-radius: 21px;
+        background-color: rgb(165 165 165);
+
+    
+    }
+    
+    /* DONE THE USERS SHOWING SELECTION PART */
+    
+    /* ---------------------------------------------------------------------------------------------------------------------------------- */
+    
+    /* Now the Chat Page Between Two Users Creation - style */
+    .chat-area header {
+        display: flex;
+        align-items: center;
+        padding: 25px 30px;
+        position: relative;
+    }
+    
+    
+    .chat-area header img {
+        height: 90px;
+        width: 90px;
+        margin:  0 15px;
+        position: absolute;
+        border: 7px solid white;
+        top: -2.8rem;
+        left: 25%;
+        transform: translateX(50%);
+    }
+    
+    .chat-area header .back-icon {
+        font-size: 18px;
+        color: #333;
+    }
+    
+    .chat-area header span {
+        font-size: 17px;
+        font-weight: 500;
+        position: absolute;
+        top: 72%;  /* position the top  edge of the element at the middle of the parent */
+        left: 49%; /* position the left edge of the element at the middle of the parent */
+        transform: translate(-50%, -50%);
+    }
+    
+    
+    /* All of the Next code is inside the chat-area in the Chat Box , which is the chat between the two users */
+    
+    
+    
+    
+    
+    
+    .chat-box {
+        height: 400px;
+        background-color: #f7f7f7;
+        padding: 10px 30px 20px 30px;
+        box-shadow: inset 0 32px 32px -32px rgb( 0 0 0 / 5%)
+                    inset 0 -32px 32px -32px rgb( 0 0 0 / 5%);
+        overflow-y: auto;
+    }
+    /* Then hide the scrollBar */
+    .chat-box::-webkit-scrollbar {
+        width: 0;
+    }
+    
+    
+    /* Very Very important Style code - start */
+    .chat-box .chat p {
+        /* Handling the style of both upcoming & incoming messages */
+        word-wrap: break-word;
+        padding: 8px 16px;
+        box-shadow: 0px 0px 31px -13px rgba(0,0,0,0.48);
+        -webkit-box-shadow: 0px 0px 31px -13px rgba(0,0,0,0.48);
+        -moz-box-shadow: 0px 0px 31px -13px rgba(0,0,0,0.48);
+    }
+    /* Very Very important Style code -end */
+    
+    
+    
+    
+    .chat-box .chat {
+        margin-top: 15px;
+    }
+    
+    
+    /* Next code will handle the looking of the Message that the user will send in the chat that will appear for him when he send */
+    .chat-box .outgoing {
+        display: flex;
+    }
+    
+    .chat-box .outgoing .details {
+        max-width: calc(100% - 130px);
+        margin-left: auto;
+    }
+    
+    .chat-box .outgoing .details p {
+        background-color: #2284FF;
+        color:  #F7FBFF;
+        border-radius: 11px 11px 11px 11px;
+        
+    }
+    
+    
+    
+    
+    
+    
+    /* Next code is the same idea of the upper code but using img for the other user that sends messages for the user in this page this style will be for the coming message */
+    .chat-box .incoming {
+        display: flex;
+        align-items: flex-end; /* This line of code to make the user image at the end of incoming message for the bottom-left*/
+    }
+    /* Adding the Sender Image */
+    .chat-box .incoming img{
+        width: 30px;
+        height: 30px;
+    }
+    
+    /* Styling the Incoming message for the user from the sender */
+    .chat-box .incoming .details {
+        max-width: calc(100% - 130px);
+        margin-right: auto;
+        margin-left: 10px;
+    }
+    
+    .chat-box .incoming .details p {
+        background-color: #F1F0F0;
+        color: #212121;
+        border-radius: 11px 11px 11px 11px;
+        box-shadow: 0px 0px 29px 2px rgba(0,0,0,0.33);
+        -webkit-box-shadow: 0px 0px 29px 2px rgba(0,0,0,0.33);
+        -moz-box-shadow: 0px 0px 29px 2px rgba(0,0,0,0.33);
+        
+        
+    }
+    .outer-message{
+        color: red;
+    }
+
+    .users header .details p {
+        font-size: 10px;
+        top: 52px;
+        left: 12px;
+        position: absolute;
+    }
+    
+    
+    /* Next will Style The Typing input (inside a form) and sending button */
+    .chat-area .typing-area{
+        padding: 18px 30px;
+        display: flex;
+        justify-content: space-between; 
+    
+    }
+    .typing-area input{
+        height: 45px;
+        width: calc(100% - 58px);
+        font-size: 17px;
+        border: 1px solid #d3d3d3;
+        padding: 0 13px;
+        border-radius: 5px 0 0 5px;
+        outline: none;
+    }
+    .typing-area button{
+        width: 55px;
+        font-size: 15px;
+        border: none;
+        outline: none;
+        background-color: #278111;
+        color: #fff;
+        cursor: pointer;
+        font-weight: 600;
+        border-radius: 0 5px 5px 0;
+    }
